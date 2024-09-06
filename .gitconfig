@@ -1,0 +1,11 @@
+[user]
+	email = 70104051+drrn012@users.noreply.github.com
+	name = Derensh Pandian
+[core]
+	editor = vi
+[credential]
+	helper = cache --timeout=3600
+[pull]
+	rebase = false
+[init]
+	defaultBranch = master

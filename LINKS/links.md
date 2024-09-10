@@ -6,7 +6,7 @@ permalink: LINKS/
 
 ## Link 1
 [Operating Systems](https://os.vlsm.org)
-- **About:**This site contains links to lecture materials, exam questions, and laboratory materials..
+- **About:** This site contains links to lecture materials, exam questions, and laboratory materials..
 
 ## Link 2
 [System Programming](https://sp.vlsm.org)

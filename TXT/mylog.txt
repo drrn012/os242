@@ -6,14 +6,6 @@ ZCZC W00 5 L02 GitHub related
 ZCZC W00 5 L03 GitHub Pages related
 ZCZC W00 10 L04 Weekly Assignments
 ZCZC W00 100 L05 Offline Class
-# Log Format
-# ZCZC WEEK# MINUTES LogCode Description
-# LogCode: https://doit.vlsm.org/ETC/logCodes.txt
-ZCZC W00 100 L01 Offline Class
-ZCZC W00 5 L02 GitHub related
-ZCZC W00 5 L03 GitHub Pages related
-ZCZC W00 10 L04 Weekly Assignments
-ZCZC W00 100 L05 Offline Class
 ZCZC W00 30 L06 Quiz Studying
 ZCZC W00 4 L07 Quiz
 ZCZC W01 100 L08 Offline Class

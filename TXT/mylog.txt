@@ -11,4 +11,8 @@ ZCZC W00 4 L07 Quiz
 ZCZC W01 100 L08 Offline Class
 ZCZC W01 10 L09 Weekly Assignments
 ZCZC W01 40 L10 more Weekly Assignments
-ZCZC W01 20 L11 Watching youtube videos about Linux Commands
+ZCZC W01 20 L11 Watching youtube videos about Linux Command
+ZCZC W01 40 L12 Weekly Assignments
+ZCZC W02 15 L13 Readings from the textbook
+ZCZC W02 25 L14 Trying out Midterm Problems
+ZCZC W02 5 L15 Watching youtube videos on Cyber Security

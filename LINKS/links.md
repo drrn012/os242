@@ -1,10 +1,14 @@
 ---
 permalink: LINKS/
 ---
+by {{ site.author }}
 
-# Helpful Links for Operating Systems Course
+Welcome to the links section of my Operating Systems Course! 
 
-## Link 1
+[HOME]({{ site.baseurl }}) [LINKS]({{ site.baseurl }}/LINKS/) [LOG]({{ site.baseurl }}{{ site.loglink }}) [GITHUB]({{ site.githublink }}) 
+
+## Links
+# WEEK 1
 [Operating Systems](https://os.vlsm.org)
 - **About:** This site contains links to lecture materials, exam questions, and laboratory materials..
 

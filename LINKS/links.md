@@ -5,7 +5,10 @@ by drrn012
 
 Welcome to the links section of my Operating Systems Course! 
 
-[![Home](https://img.shields.io/badge/Home-ff69b4?style=flat-square)]({{ site.baseurl }}/) | [![Links](https://img.shields.io/badge/Links-brightgreen?style=flat-square)]({{ site.baseurl }}/LINKS/) | [![Log](https://img.shields.io/badge/Log-blue?style=flat-square)]({{ site.baseurl }}{{ site.loglink }}) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)]({{ site.githublink }})
+[![Home](https://img.shields.io/badge/Home-ff69b4?style=flat-square)]({{ site.baseurl }}/) | 
+[![Links](https://img.shields.io/badge/Links-brightgreen?style=flat-square)]({{ site.baseurl }}/LINKS/) | 
+[![Log](https://img.shields.io/badge/Log-blue?style=flat-square)](https://github.com/drrn012/os241/TXT/mylog.txt) | 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/drrn012/os242)
 
 
 ## Links🔗

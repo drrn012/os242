@@ -10,7 +10,7 @@ Welcome to the links section of my Operating Systems Course!
 [![Log](https://img.shields.io/badge/Log-blue?style=flat-square)](https://github.com/drrn012/os241/TXT/mylog.txt) | 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)](https://github.com/drrn012/os242)
 
-## Links 🔗
+# Links 🔗
 
 ### WEEK 01 🚩
 - [Operating Systems](https://www.youtube.com/watch?v=bgBWp9EIlMM)
@@ -29,17 +29,17 @@ Welcome to the links section of my Operating Systems Course!
   - **About:** A beginner-friendly introduction to the Linux kernel.
 
 
-# WEEK 03 🚩
+### WEEK 03 🚩
 
-# WEEK 04 🚩
+### WEEK 04 🚩
 
-# WEEK 05 🚩
+### WEEK 05 🚩
 
-# WEEK 06 🚩
+### WEEK 06 🚩
 
-# WEEK 07 🚩
+### WEEK 07 🚩
  
-# WEEK 08 🚩
+### WEEK 08 🚩
 
 
 

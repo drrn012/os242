@@ -5,7 +5,8 @@ by {{ site.author }}
 
 Welcome to the links section of my Operating Systems Course! 
 
-[HOME]({{ site.baseurl }}) [LINKS]({{ site.baseurl }}/LINKS/) [LOG]({{ site.baseurl }}{{ site.loglink }}) [GITHUB]({{ site.githublink }}) 
+[![Home](https://img.shields.io/badge/Home-ff69b4?style=flat-square)]({{ site.baseurl }}/) | [![Links](https://img.shields.io/badge/Links-brightgreen?style=flat-square)]({{ site.baseurl }}/LINKS/) | [![Log](https://img.shields.io/badge/Log-blue?style=flat-square)]({{ site.baseurl }}{{ site.loglink }}) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)]({{ site.githublink }})
+
 
 ## Links
 # WEEK 1

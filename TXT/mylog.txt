@@ -16,5 +16,6 @@ ZCZC W01 40 L12 Weekly Assignments
 ZCZC W02 15 L13 Readings from the textbook
 ZCZC W02 25 L14 Trying out Midterm Problems
 ZCZC W02 5 L15 Watching youtube videos on Cyber Security
-ZCZC W02 60 L16 Weekly Assignments
-ZCZC W02 30 L17 Watching youtube links
+ZCZC W02 100 L16 Offline Class
+ZCZC W02 60 L17 Weekly Assignments
+ZCZC W02 30 L18 Watching youtube links

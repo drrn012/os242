@@ -3,8 +3,7 @@ permalink: LINKS/
 ---
 by drrn012
 
-Welcome to the links section of my Operating Systems Course! 
-
+Welcome to the links section of my Operating Systems Course!
 [![Home](https://img.shields.io/badge/Home-ff69b4?style=flat-square)]({{ site.baseurl }}/) | 
 [![Links](https://img.shields.io/badge/Links-brightgreen?style=flat-square)]({{ site.baseurl }}/LINKS/) | 
 [![Log](https://img.shields.io/badge/Log-blue?style=flat-square)](https://github.com/drrn012/os241/TXT/mylog.txt) | 
@@ -28,8 +27,13 @@ Welcome to the links section of my Operating Systems Course!
 - [Introduction to the Linux Kernel](https://www.youtube.com/watch?v=wBp0Rb-ZJak)
   - **About:** A beginner-friendly introduction to the Linux kernel.
 
-
 ### WEEK 03 🚩
+- [Makefile Tutorial](https://makefiletutorial.com)
+  - **About:** A comprehensive guide to writing Makefiles, covering syntax, rules, and best practices for automating builds in software projects.
+- [Introduction to Makefiles - YouTube](https://www.youtube.com/watch?v=F-a_BBAGfkE)
+  - **About:** A video tutorial that explains the basics of Makefiles and how to use them effectively in your development workflow.
+- [FUSE - Filesystem in Userspace Documentation](https://www.kernel.org/doc/html/latest/filesystems/fuse.html)
+  - **About:** Official documentation for FUSE, detailing how to create custom file systems in user space, including implementation details and examples.
 
 ### WEEK 04 🚩
 
@@ -40,7 +44,5 @@ Welcome to the links section of my Operating Systems Course!
 ### WEEK 07 🚩
  
 ### WEEK 08 🚩
-
-
 
 The following links for the other weeks will be updated along the way of this current Course

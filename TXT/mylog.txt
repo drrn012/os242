@@ -1,21 +1,23 @@
 # Log Format
 # ZCZC WEEK# MINUTES LogCode Description
 # LogCode: https://doit.vlsm.org/ETC/logCodes.txt
-ZCZC W00 100 L01 Offline Class
-ZCZC W00 5 L02 GitHub related
-ZCZC W00 5 L03 GitHub Pages related
-ZCZC W00 10 L04 Weekly Assignments
-ZCZC W00 100 L05 Offline Class
-ZCZC W00 30 L06 Quiz Studying
-ZCZC W00 4 L07 Quiz
-ZCZC W01 100 L08 Offline Class
-ZCZC W01 10 L09 Weekly Assignments
-ZCZC W01 40 L10 more Weekly Assignments
-ZCZC W01 20 L11 Watching youtube videos about Linux Commands
-ZCZC W01 40 L12 Weekly Assignments
-ZCZC W02 15 L13 Readings from the textbook
-ZCZC W02 25 L14 Trying out Midterm Problems
-ZCZC W02 5 L15 Watching youtube videos on Cyber Security
+
+ZCZC W03 120 L18 Weekly Assignments
+ZCZC W03 30  L19 Review past midterms & links
 ZCZC W02 100 L16 Offline Class
-ZCZC W02 60 L17 Weekly Assignments
-ZCZC W02 30 L18 Watching youtube links
+ZCZC W02 60  L17 Weekly Assignments
+ZCZC W02 25  L14 Trying out Midterm Problems
+ZCZC W02 15  L13 Readings from the textbook
+ZCZC W02 5   L15 Watching youtube videos on Cyber Security
+ZCZC W01 40  L12 Weekly Assignments
+ZCZC W01 20  L11 Watching youtube videos about Linux Commands
+ZCZC W01 40  L10 more Weekly Assignments
+ZCZC W01 10  L09 Weekly Assignments
+ZCZC W01 100 L08 Offline Class
+ZCZC W00 30  L06 Quiz Studying
+ZCZC W00 4   L07 Quiz
+ZCZC W00 10  L04 Weekly Assignments
+ZCZC W00 5   L03 GitHub Pages related
+ZCZC W00 5   L02 GitHub related
+ZCZC W00 100 L01 Offline Class
+

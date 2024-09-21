@@ -1,10 +1,7 @@
 # WEEKLY 3 of 10 RANKS
-<<<<<<< HEAD
+ZCZC W03 DamarAR
 ZCZC W03 bryantwarrickcai
 ZCZC W03 geordievannese
-ZCZC W03 jordanaziz18
-=======
->>>>>>> 1e0dae171af7074d81447633d09d13453816a8e5
 ZCZC W02 aditonorman
 ZCZC W02 AndhikaNayakaAW
 ZCZC W02 GhazaFadhlilbaqi

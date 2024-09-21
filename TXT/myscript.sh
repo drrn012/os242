@@ -1,56 +1,126 @@
 #!/bin/bash
+# Copyright (C) 2020-2024 BinKadal, Sdn. Bhd.
 
-# Define variables
-TARBALL="myW02.tar.xz"
-RESULT_DIR="$HOME/RESULT/W02"
-SHA256SUM="SHA256SUM"
-SIGNATURE="${TARBALL}.asc"
-GPG_RECIPIENT="B7195518ADA8D9B9A8C4B7E2BD9A835916E7C831" # Replace with your GPG public key ID
+# This free document is distributed in the hope that it will be 
+# useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# Debugging: Check the directory path and contents
-echo "Checking the contents of RESULT_DIR..."
-ls -l "$RESULT_DIR"
+# REV38: Sat 07 Sep 2024 15:00
+# REV37: Sun 18 Feb 2024 05:00
+# REV33: Mon 11 Sep 2023 17:00
+# REV19: Sun 05 Feb 2023 20:00
+# REV11: Sun 08 May 2022 06:00
+# START: Mon 28 Sep 2020 21:00
 
-# Create the tarball
-echo "Creating the tarball..."
-if tar -cvJf "$TARBALL" -C "$HOME/RESULT" "W02"; then
-    echo "Tarball created successfully: $TARBALL"
-else
-    echo "Failed to create tarball. Please check the RESULT_DIR path and permissions."
-    exit 1
+# ATTN:
+# You new to set "REC2" with your own Public-Key Identity!
+# Check it out with "gpg --list-key"
+# ####################### Replace REC2 ####
+REC2="343408DD8E9480E0"
+# ####################### ####### #### ####
+# REC1: public key
+REC1="63FB12B215403B20"
+# WEEKURL="http://localhost:4000/WEEK/WEEK.txt"
+WEEKURL="https://os.vlsm.org/WEEK/WEEK.txt"
+FILES="my*.asc my*.txt my*.sh"
+SHA="SHA256SUM"
+RESDIR="$HOME/RESULT/"
+usage()  { echo "Usage: $0 [-w <WEEK>]" 1>&2; exit 1; }
+nolink() { echo "No LINK $1"            1>&2; exit 1; }
+
+# Check current WEEK
+unset WEEK DEFAULT
+if [ ! -z "${1##*[!0-9]*}" ] ; then
+  WEEK=$1
+elif [ -z $1 ] ; then
+  DEFAULT=1
+else while getopts ":w:W:" varTMP
+  do
+    case "${varTMP}" in
+     w|W)
+       WEEK=${OPTARG}
+       [ ! -z "${WEEK##*[!0-9]*}" ] || usage ;;
+    esac
+  done
+  [ -z $WEEK ] && usage
 fi
 
-# Encrypt the tarball
-echo "Attempting to encrypt the tarball..."
-if gpg --armor --output "$SIGNATURE" --encrypt --recipient "$GPG_RECIPIENT" "$TARBALL"; then
-    echo "Encryption completed successfully."
-else
-    echo "Encryption failed. Please check GPG configuration and permissions."
-    exit 1
+if [ $DEFAULT ] ; then
+  [[ $(wget $WEEKURL -O- 2>/dev/null) ]] || nolink $WEEKURL
+  intARR=($(wget -q -O - $WEEKURL | awk '/\| Week / { 
+    cmd = "date -d " $2 " +%s"
+    cmd | getline mydate
+    close(cmd)
+    print mydate + (86400 * 6)
+  }'))
+  DATE=$( LANG=en_us_8859_1;date -d $(date +%d-%b-%Y) +%s)
+  for II in ${!intARR[@]} ; do
+    (( $DATE > ${intARR[$II]} )) || break;
+  done
+  WEEK=$II
+  # echo "DEBUG:TMP:$DEFAULT:W[$WEEK]:$1:$DATE:"
 fi
 
-# Create checksum file
-echo "Creating checksum file..."
-sha256sum *.asc *.txt *.sh > "$SHA256SUM"
+(( WEEK > 11 )) && WEEK=11
+WEEK=$(printf "W%2.2d\n" $WEEK)
 
-# Sign the checksum file
-echo "Attempting to sign the checksum file..."
-if gpg --armor --output "$SHA256SUM.asc" --detach-sign "$SHA256SUM"; then
-    echo "Checksum file signed successfully."
-else
-    echo "Signing checksum file failed. Please check GPG configuration and permissions."
-    exit 1
+# echo $WEEK ; exit
+
+# Is this the correct WEEK?
+read -r -p "Is this WEEK $WEEK ? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+        ;;
+    *)
+        echo "It is not Week $WEEK!"
+        usage
+        ;;
+esac
+
+# TXT
+[ -d $RESDIR ] || mkdir -p $RESDIR
+pushd $RESDIR
+for II in W?? ; do
+    [ -d $II ] || continue
+    TARFILE=my$II.tar.xz
+    TARFASC=$TARFILE.asc
+    rm -vf $TARFILE $TARFASC
+    echo "tar cfJ $TARFILE $II/"
+    tar cfJ $TARFILE $II/
+    echo "gpg --armor --output $TARFASC --encrypt --recipient $REC1 --recipient $REC2 $TARFILE"
+    gpg --armor --output $TARFASC --encrypt --recipient $REC1 --recipient $REC2 $TARFILE
+done
+popd
+
+if [[ "$WEEK" != "W00" ]] && [[ "$WEEK" != "W01" ]] ; then
+    II="${RESDIR}my$WEEK.tar.xz.asc"
+    echo "Check and move $II..."
+    [ -f $II ] && mv -vf $II .
 fi
 
-# Verify the signature
-echo "Verifying the checksum signature..."
-if gpg --verify "$SHA256SUM.asc" "$SHA256SUM"; then
-    echo "Signature verification successful."
-else
-    echo "Signature verification failed."
-    exit 1
-fi
+echo "rm -f $SHA $SHA.asc"
+rm -f $SHA $SHA.asc
 
-# Print completion message
-echo "Tarball created, encrypted, and signed: $TARBALL and $SIGNATURE"
-echo "Checksum file created and signed: $SHA256SUM and $SHA256SUM.asc"
+echo "sha256sum $FILES > $SHA"
+sha256sum $FILES > $SHA
+
+echo "# ################ CHECKSUM ###### #########"
+echo "sha256sum -c $SHA"
+sha256sum -c $SHA
+
+echo "# ################# SIGNING CHECKSUM ######### ######### ########"
+echo "gpg --output $SHA.asc --armor --sign --local-user $REC2 --detach-sign $SHA"
+gpg --output $SHA.asc --armor --sign --local-user $REC2 --detach-sign $SHA
+
+echo "# ################# VERIFY ######### ######### ######### ########"
+echo "gpg --verify $SHA.asc $SHA"
+gpg --verify $SHA.asc $SHA
+
+echo ""
+echo "==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ===="
+echo "==== ==== ==== ATTN: is this WEEK $WEEK ?? === ==== ==== ===="
+echo "==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ==== ===="
+echo ""
+
+exit 0
+

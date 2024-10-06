@@ -42,6 +42,14 @@ Welcome to the links section of my Operating Systems Course! [Home](https://your
   About: This video explains Docker and containerization, covering its features, benefits, and how to get started with Docker.
 
 # WEEK 05 🚩
+- **[Video: Understanding Thrashing](https://youtu.be/2quKyPnUShQ?si=1dbEtRdRszZlear2)**  
+  About: This video explains the concept of thrashing in operating systems, detailing how excessive paging can lead to significant performance degradation.
+
+- **[What is Thrashing? - javatpoint](https://www.javatpoint.com/what-is-thrash#:~:text=Thrashing%20is%20when%20the%20page,to%20be%20reduced%20or%20negligible.)**  
+  About: This article provides an in-depth explanation of thrashing, its causes, and its effects on system performance, along with potential solutions to mitigate it.
+
+- **[Concurrency vs Parallelism: A Brief Review - Medium](https://medium.com/@itIsMadhavan/concurrency-vs-parallelism-a-brief-review-b337c8dac350)**  
+  About: This article discusses the differences between concurrency and parallelism in computing, including practical implications and examples of each concept.
 
 # WEEK 06 🚩
 

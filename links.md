@@ -52,6 +52,15 @@ Welcome to the links section of my Operating Systems Course! [Home](https://your
   About: This article discusses the differences between concurrency and parallelism in computing, including practical implications and examples of each concept.
 
 # WEEK 06 🚩
+- **[The fork() System Call](https://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/fork/create.html)**  
+  About: This article from Michigan Technological University offers an in-depth explanation of the fork() function in C, including how it works, with code examples and visual aids to aid comprehension of process creation in programming.
+
+- **[Process Management (Process and Threads) - Neso Academy](https://youtu.be/OrM7nZcxXZU)**  
+  About: This video is an educational resource that explains process management, focusing on the concepts of processes and threads, making it easier to focus on the fundamentals of how computer processes are managed.
+
+- **[What is a Semaphore?](https://www.youtube.com/watch?v=ukM_zzrIeXs)**  
+  About: The video introduces semaphores as tools for managing access to shared resources in concurrent programming, helping to prevent problems like deadlock.
+
 
 # WEEK 07 🚩
 

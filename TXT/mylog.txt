@@ -2,6 +2,9 @@
 # ZCZC WEEK# MINUTES LogCode Description
 # LogCode: https://doit.vlsm.org/ETC/logCodes.txt
 
+ZCZC W05 90  L30 Midterm Review
+ZCZC W06 120 L29 Weekly Assignments
+ZCZC W06 100 L28 Offline Class
 ZCZC W05 90  L27 Midterm Review
 ZCZC W05 120 L26 Weekly Assignments
 ZCZC W05 80  L25 Quiz Prep

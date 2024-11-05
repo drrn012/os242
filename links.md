@@ -63,6 +63,15 @@ Welcome to the links section of my Operating Systems Course! [Home](https://your
 
 
 # WEEK 07 🚩
+- **[CPU Scheduling Basics](https://youtu.be/Jkmy2YLUbUY?si=oEuc10rtpRS6xa3-)**  
+  About: This YouTube video by Jacob Sorber provides an introduction to the basic concepts of CPU scheduling in computer science. It includes detailed examples to help clarify these concepts.
+
+- **[What is Process Scheduling in OS?](https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm#:~:text=Definition,of%20a%20Multiprogramming%20operating%20systems)**  
+  About: This TutorialsPoint page offers a detailed discussion on process scheduling within operating systems, covering different types of queues like Job Queue and Ready Queue, and explaining the Two-State Process Model.
+
+- **[Linux File System/Structure Explained!](https://www.youtube.com/watch?v=HbgzrKJvDRw)**  
+  About: This video outlines the structure of the Linux file system, explaining the purpose and contents of various directories within the Linux base directory.
+
 
 # WEEK 08 🚩
 

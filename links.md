@@ -74,6 +74,14 @@ Welcome to the links section of my Operating Systems Course! [Home](https://your
 
 
 # WEEK 08 🚩
+- **[Process Synchronization in Operating System 1](https://youtu.be/vMdPHpPiy4Q)**  
+  About: This video explains the concept of process synchronization in operating systems, covering how synchronization techniques ensure that multiple processes can run efficiently without conflicts.
+
+- **[Process Synchronization in Operating System 2](https://www.youtube.com/watch?v=9Uw1HXy8f7w)**  
+  About: This video likely discusses various process synchronization methods used in operating systems, focusing on how these techniques help manage processes to avoid data inconsistencies and conflicts.
+
+- **[Concurrency vs Parallelism: A Brief Review](https://medium.com/@itIsMadhavan/concurrency-vs-parallelism-a-brief-review-b337c8dac350)**  
+  About: This article provides an overview of the differences between concurrency and parallelism, clarifying concepts related to multithreading, and explaining how these techniques improve system performance in concurrent tasks.
 
 The following links for the other weeks will be updated along the way of this current Course.
 
